@@ -3,6 +3,11 @@ $(document).ready(function(){
 	document.getElementById('btnTest').addEventListener('click',btnTestListener,false);
 	
 	function btnTestListener(){
-		alert('testing');
+		var x=1;
+		for(var i=1;i<10;i++){
+			x=x*i;
+		}
+		
+		msg.innerHTML=x;
 	}
 })
